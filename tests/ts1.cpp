@@ -16,8 +16,20 @@ TEST(TS1, testGreaterOrEqual)
     EXPECT_GE(Rational(1,4), Rational(-1,4));
 }
 
-TEST(TS1, testZeroInDenomExcept)
+TEST(TS1, testAddition)
 {
-    EXPECT_THROW(Rational(1,0), ZeroInDenomException);
+    EXPECT_TRUE(Rational(1,2) == Rational(1,4) + Rational(1,4));
 }
+
+TEST(TS1, testNormalization)
+{
+    Rational r = Rational::normalize(Rational(2,6));
+    EXPECT_EQ(r.numerator(), 1);
+    EXPECT_EQ(r.denominator(), 3);
+}
+
+// TEST(TS1, testZeroInDenomExcept)
+// {
+//     EXPECT_THROW(Rational(1,0), ZeroInDenomException);
+// }
 

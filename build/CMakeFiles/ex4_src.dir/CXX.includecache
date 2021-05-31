@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/foka/cpp-lab4/ex4/src/rational.cpp
+rational.h
+/home/foka/cpp-lab4/ex4/src/rational.h
+
+/home/foka/cpp-lab4/ex4/src/rational.h
+ostream
+-
+
