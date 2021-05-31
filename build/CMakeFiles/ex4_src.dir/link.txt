@@ -1,2 +1,0 @@
-/usr/bin/ar qc lib/libex4_src.a  CMakeFiles/ex4_src.dir/src/rational.cpp.o
-/usr/bin/ranlib lib/libex4_src.a

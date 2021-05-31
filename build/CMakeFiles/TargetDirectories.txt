@@ -1,5 +1,0 @@
-/home/foka/cpp-lab4/ex4/build/CMakeFiles/edit_cache.dir
-/home/foka/cpp-lab4/ex4/build/CMakeFiles/tests.dir
-/home/foka/cpp-lab4/ex4/build/CMakeFiles/ex4_src.dir
-/home/foka/cpp-lab4/ex4/build/CMakeFiles/rebuild_cache.dir
-/home/foka/cpp-lab4/ex4/build/CMakeFiles/ex4.dir
