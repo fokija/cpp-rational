@@ -3,8 +3,25 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
+    
+    try {
+        Rational r2(2, 11), r3(1, -3), r5(18, 6);
+
+        Rational res1 = 3 + r2 * r3;
+        Rational res2 = (3 + r2) * r3;
+        Rational res3 = 3 + r3 * (r2 + 2) / (r5 - r3);
+
+        cout << 3 << " + " << r2 << " * " << r3 << " = " << res1 << endl;
+        cout << "(" << 3 << " + " << r2 << ")" << " * " << r3 << " = " << res2 << endl;
+        cout << 3 << " + " << r3 << " * " << "(" << r2 << " + " << 2 << ")" << "/" << "(" << r5 << " - "
+             << r3 << ")" << " = " << res3 << endl;
+    } catch (const char *msg) {
+        cerr << msg << endl;
+    }
+
+
+//other usege cases without try/catch
     Rational test_r(1,2);
     cout << test_r; 
 
@@ -32,16 +49,8 @@ int main()
     cout << r1 * r2 << endl;
     cout << "test dzielenia" <<endl;
     cout << r1 / r2 << endl;
-    
-    // Rational r2(2, 11), r3(1, -3), r5(18, 6);
-    // Rational res1 = 3 + r2 * r3;
-    // Rational res2 = (3 + r2) * r3;
-    // Rational res3 = 3 + r3 * (r2 + 2) / (r5 - r3);
 
-    // cout << 3 << " + " << r2 << " * " << r3 << " = " << res1 <<endl;
-    // //out << "(" << 3 << " + " << r2 << 
-
-
+    return 0;
 
 }
 
